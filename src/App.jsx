@@ -18,7 +18,7 @@ function App() {
         <li className="list-item left"><a href="https://www.linkedin.com/in/GemAfaWell/"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="linkedIn" /></a></li>
       </ul>
         <div className="align-center hero">
-          <h1><a href="https://gemafawell.dev/">Gemini Powell</a></h1>
+          <h1>Gemini Powell</h1>
           <h2>Full-Stack Software Engineer</h2>
         </div>
         <ul className="socials list">
@@ -93,15 +93,15 @@ function App() {
           <h3>Education</h3>
         </div>
         <ul className="schools">
+        <div className="school">
+            <p>University of the People, Remote</p>
+            <p>Major: Computer Science</p>
+            <p>Graduation: 2025</p>
+          </div>
           <div className="school">
             <p>100Devs Academy, Remote</p>
             <p>Major: Full Stack Web Development</p>
             <p>Graduation: 2023</p>
-          </div>
-          <div className="school">
-            <p>University of the People, Remote</p>
-            <p>Major: Computer Science</p>
-            <p>Graduation: 2025</p>
           </div>
         </ul>
 

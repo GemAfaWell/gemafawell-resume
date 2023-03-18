@@ -94,6 +94,7 @@ p, h4, h5, h6 {
 }
 a {
   text-decoration: none;
+  color: #fff;
 }
 .job, .school {
  padding: 1rem;
