@@ -1,11 +1,17 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="block App font-page">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      className="block App font-page"
+    >
       <header className="flex App-header">
       <ul className="socials list">
         <li className="list-item left"><a href="https://github.com/GemAfaWell/"><img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub" /></a></li>
@@ -13,7 +19,7 @@ function App() {
       </ul>
         <div className="align-center hero">
           <h1><a href="https://gemafawell.dev/">Gemini Powell</a></h1>
-          <h2>Full Stack Web Developer</h2>
+          <h2>Full-Stack Software Engineer</h2>
         </div>
         <ul className="socials list">
           <li className="list-item right"><a href="https://twitter.com/GemAfaWell"><img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="Twitter" /></a></li>
@@ -122,7 +128,7 @@ function App() {
         <p>&copy; 2023 <a href="https://gemafawell.dev">Gemini Powell</a> and <a href="https://www.texaswebgems.com/">Texas WebGems</a></p>
         <p>Built with Vite + React</p>
       </footer>
-    </div>
+    </motion.div>
   )
 };
 export default App;

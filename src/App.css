@@ -12,6 +12,24 @@
   background-color: indigo;
   color: #fff;
 }
+.list-transition-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.list-transition-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 300ms ease-in;
+}
+.list-transition-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.list-transition-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 300ms ease-in;
+}
 header {
   width: 100%;
   margin: 0;
